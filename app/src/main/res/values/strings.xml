@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Blue Sea Rider</string>
+    <string name="signup">إنشاء حساب</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="have_an_account">لديك حساب؟</string>
+    <string name="log_in">تسجيل دخول</string>
+    <string name="date_sample">29 أبريل</string>
+    <string name="available_seats">مقاعد متوفرة</string>
+    <string name="booked">محجوز</string>
+    <string name="book">احجز</string>
+    <string name="trip_status">حالة الرحلة</string>
+    <string name="to_destination">إلى الوجهة</string>
+    <string name="add_new_account"><u>ليس لديك حساب؟ انشاء حساب </u>. </string>
+    <string name="username_can_not_be_empty">لا يمكن ان يكون اسم المستخدم فارغ</string>
+    <string name="is_email_valid">الرجاء التاكد من كتابه الايميل بشكل صحيح</string>
+    <string name="password_is_short">كلمة المرور قصيره</string>
+    <string name="signup_failed">فشل تسجيل الدخول</string>
+    <string name="new_account_created">تم انشاء حساب جديد</string>
+    <string name="profile_photo">اختار صوره الملف الشخصي من فضلك</string>
+    <string name="upload_image_falild">فشل في تحميل الصوره</string>
+    <string name="get_photo_url_failed">فشل الحصول على رابط الصوره</string>
+    <string name="uploading">جاري تحميل البيانات…</string>
+    <string name="failed_update_profile">فشل تحديث الملف الشخصي</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+    <string name="signOut">تسجيل الخروج</string>
+    <string name="new_account"> تسجيل حساب جديد</string>
+    <string name="no_available_seats">لا توجد مقاعد متاحه للحجز 😧</string>
+    <string name="trip_reserved">الرحله محجوزه</string>
+    <string name="trip_arrived">وصلت الى الوجه</string>
+    <string name="trip_underway">الرحله جاريه</string>
+    <string name="trip_has_not_started_yet">الرحله لم تبدا بعد</string>
+    <string name="signout">هل تريد حقا تسجيل الخروج 🤔</string>
+
+</resources>
