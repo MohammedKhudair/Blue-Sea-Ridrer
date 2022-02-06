@@ -113,6 +113,8 @@ public class TripDetailsActivity extends AppCompatActivity implements OnMapReady
 
     // بدأ الاستماع الى تحديثات الرحله
     private void startListeningToTrip() {
+        setMarkersLocation();
+
         TripManager.getInstance().startListeningToUpdates(trip, new TripListenerUpdates() {
             @Override
             public void tripListener(Trip trip) {
@@ -136,6 +138,24 @@ public class TripDetailsActivity extends AppCompatActivity implements OnMapReady
                 }
             }
         });
+    }
+
+    //وضع موقع علامة البدايه والنهايه
+    private void setMarkersLocation() {
+        LatLng pickUpLatLng = new LatLng(trip.getPickUpLat(), trip.getPickUpLng());
+        LatLng destinationLatLng = new LatLng(trip.getDestinationLat(), trip.getDestinationLng());
+
+        BitmapDescriptor descriptor1 = BitmapDescriptorFactory.fromResource(R.drawable.pickup);
+        MarkerOptions markerOptions1 = new MarkerOptions();
+        markerOptions1.position(pickUpLatLng);
+        markerOptions1.icon(descriptor1);
+        mGoogleMap.addMarker(markerOptions1);
+
+        BitmapDescriptor descriptor2 = BitmapDescriptorFactory.fromResource(R.drawable.destination);
+        MarkerOptions markerOptions2 = new MarkerOptions();
+        markerOptions2.position(destinationLatLng);
+        markerOptions2.icon(descriptor2);
+        mGoogleMap.addMarker(markerOptions2);
     }
 
     @Override

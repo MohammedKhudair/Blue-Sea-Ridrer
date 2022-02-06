@@ -75,6 +75,12 @@ public class SignUpActivity extends AppCompatActivity {
             }
         });
 
+        // Check if user is signed in.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser != null) {
+            startActivity(MainActivity.getStartIntent(SignUpActivity.this));
+            finish();
+        }
     }
 
     // التاكد من الحقول وانشاء الحساب
@@ -173,7 +179,6 @@ public class SignUpActivity extends AppCompatActivity {
         });
     }
 
-
     // طلب اذن صلاحيه الوصول الى الذاكره
     private void requestExternalStoragePermission() {
         mReadStoragePermissionGranted = false;
@@ -236,5 +241,6 @@ public class SignUpActivity extends AppCompatActivity {
 
     public void GoToLogInActivity(View view) {
         startActivity(new Intent(this, LogInActivity.class));
+        finish();
     }
 }

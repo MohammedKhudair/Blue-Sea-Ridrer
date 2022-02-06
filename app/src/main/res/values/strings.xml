@@ -37,5 +37,6 @@
     <string name="trip_underway">الرحله جاريه</string>
     <string name="trip_has_not_started_yet">الرحله لم تبدا بعد</string>
     <string name="signout">هل تريد حقا تسجيل الخروج 🤔</string>
+    <string name="action_settings">الاعدادات</string>
 
 </resources>

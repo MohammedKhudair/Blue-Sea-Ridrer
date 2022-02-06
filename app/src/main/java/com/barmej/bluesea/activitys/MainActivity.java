@@ -84,10 +84,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     finish();
                 }
             });
+            builder.setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.dismiss());
             builder.show();
 
-        } else if (id == R.id.sign_up) {
-            startActivity(SignUpActivity.getStartIntent(MainActivity.this));
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
